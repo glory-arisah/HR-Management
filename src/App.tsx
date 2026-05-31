@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router'
+import { WindowSizeProvider } from '@/context/WindowSizeContext.tsx'
 
 function App() {
 	return (
-		<>
-			<h1>App Page</h1>
+		<WindowSizeProvider>
 			<Outlet />
-		</>
+		</WindowSizeProvider>
 	)
 }
 

@@ -1,26 +1,36 @@
 @import 'tailwindcss';
 
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+@theme {
+	--color-purple-950: #10002b;
+	--color-purple-900: #240046;
+	--color-purple-800: #3c096c;
+	--color-purple-700: #5a189a;
+	--color-purple-600: #7b2cbf;
+	--color-purple-500: #9d4edd;
+	--color-purple-300: #c77dff;
+	--color-purple-100: #e0aaff;
+
+	--color-bg-default: var(--color-purple-950);
+	--color-bg-surface: var(--color-purple-900);
+	--color-bg-elevated: var(--color-purple-800);
+
+	--color-border-subtle: var(--color-purple-800);
+	--color-border-muted: var(--color-purple-700);
+
+	--color-text-base: var(--color-purple-100);
+	--color-text-muted: var(--color-purple-300);
+	--color-text-disabled: var(--color-purple-600);
+	--color-text-heading: #ffffff;
+
+	--color-accent: var(--color-purple-300);
+
+	--color-base-text: #d1d1d1;
+	--color-gray-light: #a2a1a8;
 }
 
 body {
+	background-color: #10002b;
+	color: #d1d1d1;
 	font-family:
 		'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-@layer base {
-	h1 {
-		@apply text-4xl font-bold mb-4;
-	}
-	h2 {
-		@apply text-3xl font-bold mb-3;
-	}
-	h3 {
-		@apply text-2xl font-semibold mb-2;
-	}
 }
